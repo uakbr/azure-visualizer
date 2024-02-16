@@ -1,71 +1,100 @@
-# Azure Permissions Visualizer
+<p align="center">
+  <img src="path/to/logo.png" alt="Azure Permissions Visualizer Logo" width="200"/>
+</p>
+
+<h1 align="center">Azure Permissions Visualizer</h1>
+
+<p align="center">
+  <a href="https://github.com/yourusername/AzurePermissionsVisualizer/actions">
+    <img src="https://github.com/yourusername/AzurePermissionsVisualizer/workflows/Build/badge.svg" alt="Build Status">
+  </a>
+  <a href="https://github.com/yourusername/AzurePermissionsVisualizer/blob/master/LICENSE.md">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+  </a>
+  <a href="https://github.com/yourusername/AzurePermissionsVisualizer/blob/master/CONTRIBUTING.md">
+    <img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions Welcome">
+  </a>
+</p>
 
 The Azure Permissions Visualizer is a cutting-edge tool designed to improve the management and visualization of permissions and access levels across Azure services. By leveraging direct integration with Azure Active Directory, this application simplifies the visualization of complex permissions structures and assists in identifying and managing over-privileged accounts. This ensures a more secure and efficient cloud environment. With its web-based interface, administrators are provided with interactive maps and comprehensive reporting features, making the process of permissions oversight and compliance straightforward.
 
-## Features
+## Table of Contents
+- [Quick Start](#quick-start)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Questions/Support](#questionssupport)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Authors and Acknowledgment](#authors-and-acknowledgment)
+- [Status](#status)
 
-- **Interactive Permissions Maps**: Visualize complex permissions structures across Azure services with ease.
-- **Comprehensive Reporting**: Generate detailed reports on permissions and access levels to ensure compliance and security.
-- **Over-privileged Account Identification**: Easily identify and manage accounts with more permissions than necessary.
-- **Web-based Interface**: Access the tool from anywhere through its user-friendly web interface.
+## Quick Start
 
-## Getting Started
+For a quick setup, ensure you have Python 3.6+, Flask, and an Azure account. Clone the repo, install dependencies, initialize the database, and run the server:
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-- Python 3.6 or higher
-- Flask
-- Flask-SQLAlchemy
-- Flask-Migrate
-- Flask-Login
-- An Azure account with access to Azure Active Directory
-
-### Installation
-
-1. Clone the repository to your local machine:
 ```
+bash
 git clone https://github.com/yourusername/AzurePermissionsVisualizer.git
-```
-
-2. Navigate to the project directory:
-```
 cd AzurePermissionsVisualizer
-```
-
-3. Install the required Python packages:
-```
 pip install -r requirements.txt
-```
-
-4. Initialize the database:
-```
 flask db upgrade
-```
-
-5. Run the application:
-```
 flask run
 ```
 
-The application should now be running on `http://localhost:5000`.
+
+Visit `http://localhost:5000` in your browser to start using the application.
+
+## Features
+
+- 🗺️ **Interactive Permissions Maps**: Visualize complex permissions structures with interactive maps.
+- 📊 **Comprehensive Reporting**: Generate detailed reports for compliance and security.
+- 🔍 **Over-privileged Account Identification**: Identify and manage accounts with excessive permissions.
+- 🌐 **Web-based Interface**: Accessible from anywhere through a user-friendly web interface.
+
+## Installation
+
+...
 
 ## Usage
 
-1. **Login**: Start by logging into the application using your credentials.
-2. **View Permissions**: Navigate to the homepage to see an overview of permissions across Azure services.
-3. **Generate Reports**: Access detailed reports and visualizations of permissions by navigating to the Reports section.
+...
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the submission process.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## Acknowledgments
 
-- Thanks to the Flask community for the comprehensive documentation.
-- Special thanks to the Azure Active Directory team for their support and APIs.
+- Flask community for their comprehensive documentation.
+- Azure Active Directory team for their support and APIs.
+
+## Questions/Support
+
+If you have any questions or need support, please [open an issue](https://github.com/yourusername/AzurePermissionsVisualizer/issues) on GitHub.
+
+## Screenshots
+
+![Homepage Screenshot](path/to/homepage_screenshot.png)
+
+## Technologies Used
+
+- ![Python](path/to/python_logo.png) Python
+- ![Flask](path/to/flask_logo.png) Flask
+- ![Azure](path/to/azure_logo.png) Azure
+
+## Authors and Acknowledgment
+
+- Jane Doe - Initial work
+- John Smith - Contributions
+
+## Status
+
+The project is in active development. Latest stable release: v1.0.0.
