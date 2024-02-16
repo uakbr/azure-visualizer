@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Permissions Report</h1>
+<p>This section provides a detailed report and visualization of the permissions and access levels across Azure services for your organization.</p>
+
+<div id="permissions-report">
+    <h2>Report Overview</h2>
+    <p>Here, you will find interactive maps and charts that offer a comprehensive view of the permissions structure within your Azure environment. Use the tools provided to explore specific areas of interest or concern.</p>
+    
+    <div class="report-visualization">
+        <h3>Interactive Permissions Map</h3>
+        <p>This interactive map visualizes the hierarchical structure of permissions and roles across your Azure services. Hover over elements to see more details or click to drill down into specific areas.</p>
+        <!-- Visualization placeholder -->
+        <div id="permissions-map"></div>div>
+    </div>
+    
+    <div class="report-details">
+        <h3>Detailed Permissions List</h3>h3>
+        <p>Below is a detailed list of permissions, roles, and the associated accounts. This list aids in identifying over-privileged accounts and ensuring that the principle of least privilege is maintained.</p>
+        <!-- Detailed list placeholder -->
+        <table id="permissions-list">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Role</th>
+                    <th>Account</th>
+                    <th>Permission Level</th>
+                </tr>tr>
+            </thead>thead>
+            <tbody>
+                <!-- Dynamically generated content -->
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="report-actions">
+        <h3>Actions</h3>
+        <p>Based on the insights provided by this report, you may want to take the following actions:</p>p>
+        <ul>
+            <li>Review and adjust permissions for over-privileged accounts.</li>li>
+            <li>Update roles and permissions to better align with the principle of least privilege.</li>li>
+            <li>Export this report for compliance and auditing purposes.</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
+</li></h3>

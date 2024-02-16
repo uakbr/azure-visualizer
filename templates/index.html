@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Welcome to Azure Permissions Visualizer</h1>
+<p>This innovative tool is designed to enhance the management and visualization of permissions and access levels across Azure services. By integrating directly with Azure Active Directory, the Azure Permissions Visualizer simplifies the visualization of complex permissions structures and aids in the identification and management of over-privileged accounts.</p>
+
+<div class="overview">
+    <h2>Features:</h2>
+    <ul>
+        <li>Interactive maps for visualizing permissions structures.</li>
+        <li>Comprehensive reporting features for oversight and compliance.</li>li>
+        <li>Direct integration with Azure Active Directory for real-time data.</li>
+        <li>Identification and management of over-privileged accounts.</li>
+    </ul>
+</div>
+
+<div class="get-started">
+    <h2>Get Started</h2>
+    {% if not current_user.is_authenticated %}
+    <p><a href="{{ url_for('login') }}">Login</a> to manage and visualize your Azure service permissions.</p>
+    {% else %}
+    <p>Visit the <a href="{{ url_for('permissions') }}">Manage Permissions</a> page to start visualizing and managing your permissions.</p>
+    {% endif %}
+</div>
+{% endblock %}

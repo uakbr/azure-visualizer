@@ -1,0 +1,11 @@
+Flask==2.1.2
+Flask-Migrate==3.1.0
+Flask-WTF==1.0.0
+Flask-Login==0.6.0
+Flask-SQLAlchemy==2.5.1
+requests==2.27.1
+azure-identity==1.7.1
+azure-mgmt-authorization==2.0.0
+d3.js==7.1.1
+SQLAlchemy==1.4.31
+pytest==7.1.2
